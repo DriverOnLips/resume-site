@@ -1,0 +1,68 @@
+section {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+h1, h2, h3, h4, p, a, li, span {
+  color: var(--text-color-secondary)
+}
+
+#app {
+  --background-color: var(--background-color-dark);
+  --background-header-color: var(--background-header-color-dark);
+  --header-shadow-color: var(--header-shadow-color-dark);
+
+  --text-color-secondary: var(--text-color-secondary-dark);
+
+  --header-btn-border: var(--header-btn-border-dark);
+  --header-btn-background: var(--header-btn-background-dark);
+  --header-btn-hover: var(--header-btn-hover-dark);
+}
+
+.white {
+  --background-color: var(--background-color-white)!important;
+  --background-header-color: var(--background-header-color-white)!important;
+
+  --text-color-secondary: var(--text-color-secondary-white)!important;
+
+  --header-btn-border: var(--header-btn-border-white)!important;
+  --header-btn-background: var(--header-btn-background-white)!important;
+  --header-btn-hover: var(--header-btn-hover-white)!important;
+}
+
+.text-h1-medium {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.text-h2-medium {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.text-h3-medium {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.text-h4-medium {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.text-h5-medium {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.text-base1-medium {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.text-base2-medium {
+  font-size: 16px;
+  font-weight: 600;
+}
