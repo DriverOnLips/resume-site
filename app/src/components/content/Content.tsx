@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 import './Content.css';
 import { useApp } from "../../hooks/useApp";
