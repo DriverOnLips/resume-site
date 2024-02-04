@@ -229,14 +229,30 @@ const Content: React.FC = () => {
 			</section>
 
 			<section className='expirience hidden'>
-				<span className='expirience__title text-h3-medium'>Опыт работы</span>
+				<span className='expirience__title text-h3-medium'>
+					Опыт разработки
+				</span>
 				<div className='timeline'>
 					<div className='container left-container'>
 						<img src='./src/assets/img/school.png' alt='bmstu' />
 						<div className='text-box'>
-							<h2>apple</h2>
-							<div className='small'>2019-2020</div>
-							<p>some text</p>
+							<span className='text-h4-medium'>МГТУ им. Баумана</span>
+							<span className='text-h5-medium'>Помощник преподавателя</span>
+							<span className='text-base1-medium'>
+								Сентябрь 2022 - Настоящее время
+							</span>
+							<ul className='bmstu_tasks'>
+								<li>
+									<span className='text-base2-medium'>
+										Сентябрь 2022 - Настоящее время
+									</span>
+								</li>
+								<li>
+									<span className='text-base2-medium'>
+										Сентябрь 2022 - Настоящее время
+									</span>
+								</li>
+							</ul>
 							<div className='left-container-arrow'></div>
 						</div>
 					</div>
@@ -244,9 +260,25 @@ const Content: React.FC = () => {
 					<div className='container right-container'>
 						<img src='./src/assets/img/vk.png' alt='vk' />
 						<div className='text-box'>
-							<h2>apple</h2>
-							<div className='small'>2019-2020</div>
-							<p>some text</p>
+							<span className='text-h4-medium'>VK Образование</span>
+							<span className='text-h5-medium'>
+								Студент программы по web-разработке
+							</span>
+							<span className='text-base1-medium'>
+								Февраль 2023 - Настоящее время
+							</span>
+							<ul className='vk_tasks'>
+								<li>
+									<span className='text-base2-medium'>
+										Сентябрь 2022 - Настоящее время
+									</span>
+								</li>
+								<li>
+									<span className='text-base2-medium'>
+										Сентябрь 2022 - Настоящее время
+									</span>
+								</li>
+							</ul>
 							<div className='right-container-arrow'></div>
 						</div>
 					</div>
@@ -254,9 +286,7 @@ const Content: React.FC = () => {
 			</section>
 
 			<section className='contact hidden'>
-				<span className='contact__title text-h3-medium'>
-					Свяжитесь со мной:
-				</span>
+				<span className='contact__title text-h3-medium'>Свяжитесь со мной</span>
 				<div className='contact__items'>
 					<div className='contact__item hidden'>
 						<img

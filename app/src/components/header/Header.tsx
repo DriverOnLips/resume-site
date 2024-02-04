@@ -22,7 +22,7 @@ const Header: React.FC = () => {
 					</div>
 					<div className='header__btns__components__item header__btns__components__work'>
 						<a className='header__btns__components__item-text text-h5-medium'>
-							Опыт работы
+							Опыт разработки
 						</a>
 					</div>
 					<div className='header__btns__components__item header__btns__components__contacts'>
