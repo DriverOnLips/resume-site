@@ -19,6 +19,14 @@
   transform: translateX(0);
 }
 
+#intro,
+#about_me,
+#tech,
+#expirience,
+#contact {
+  scroll-margin: 75px;
+}
+
 .theme {
   position: fixed;
   bottom: 0;
@@ -49,13 +57,13 @@
 }
 
 .intro__name {
-  color: aqua;
+  color: var(--text-color-third);
 }
 
 .about_me {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
   width: 1200px;
   margin-bottom: 3rem;
 }
@@ -66,6 +74,10 @@
 
 .about_me__text {
   margin-bottom: 2rem;
+}
+
+.about_me__skills_title {
+  color: var(--text-color-third);
 }
 
 .about_me__skills_list {
@@ -98,69 +110,39 @@
   margin-bottom: 1rem;
 }
 
-.tech__frameworks {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
-}
-
-.tech__frameworks__text {
-  margin-bottom: 1rem;
-}
-
-.tech__frameworks__items {
-  display: inline-flex;
-  gap: 1rem;
-}
-
-.tech__frameworks__item {
-  height: 35px;
-}
-
-.tech {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 1200px;
-  margin-bottom: 3rem;
-}
-
-.tech__languages {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
-}
-
-.tech__languages__text {
-  margin-bottom: 1rem;
-}
-
-.tech__languages__items {
-  display: inline-flex;
-  gap: 1rem;
-}
-
-.tech__languages__item {
-  height: 35px;
-}
-
+.tech__frameworks,
+.tech__languages,
 .tech__others {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
 }
 
+.tech__frameworks__text,
+.tech__languages__text,
 .tech__others__text {
   margin-bottom: 1rem;
+  color: var(--text-color-third);
 }
 
+.tech__frameworks__items,
+.tech__languages__items,
 .tech__others__items {
   display: inline-flex;
   gap: 1rem;
 }
 
+.tech__frameworks__item,
+.tech__languages__item,
 .tech__others__item {
   height: 35px;
+  transition: all 0.5s;
+}
+
+.tech__frameworks__item:hover,
+.tech__languages__item:hover,
+.tech__others__item:hover {
+  scale: 1.1;
 }
 
 .expirience {
@@ -215,7 +197,7 @@
   position: relative;
   border-radius: 6px;
   padding: 20px 30px;
-  background: white;
+  background: var(--background-item-color);
   font-size: 15;
   gap: 1rem;
 }
@@ -246,7 +228,7 @@
   position: absolute;
   width: 6px;
   height: 100%;
-  background: white;
+  background: var(--background-item-color);
   top: 0;
   left: calc(50% + 100px);
   margin-left: -3px;
@@ -270,7 +252,7 @@
   z-index: 1;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-left: 15px solid white;
+  border-left: 15px solid var(--background-item-color);
   right: -15px;
 }
 
@@ -282,8 +264,36 @@
   z-index: 1;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-right: 15px solid white;
+  border-right: 15px solid var(--background-item-color);
   left: -15px;
+}
+
+.expirience__company__name {
+  color: var(--header-shadow-color);
+}
+
+.expirience__company__role {
+  color: var(--text-color-first);
+}
+
+.expirience__company__deadlines {
+  color: var(--header-shadow-color);
+}
+
+.expirience__company__task__item {
+  color: var(--text-color-first);
+}
+
+.bmstu_tasks,
+.vk_tasks li {
+  color: var(--header-shadow-color);
+}
+
+.bmstu_tasks,
+.vk_tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .contact {
@@ -291,7 +301,7 @@
   flex-direction: column;
   width: 1200px;
   margin-bottom: 3rem;
-  min-height: auto!important;
+  min-height: auto !important;
 }
 
 .contact__title {
@@ -306,7 +316,7 @@
 }
 
 .contact__item {
-  width: 80px;
+  width: 60px;
 }
 
 .contact__item img {
@@ -329,4 +339,19 @@
 
 .contact__item:nth-child(5) {
   transition-delay: 800ms;
+}
+
+.contact__telegram,
+.contact__vk,
+.contact__mailru,
+.contact__phone {
+  transition: all 0.5s;
+}
+
+.contact__telegram:hover,
+.contact__vk:hover,
+.contact__mailru:hover,
+.contact__phone:hover {
+  transition-delay: 0s !important;
+  scale: 1.1;
 }

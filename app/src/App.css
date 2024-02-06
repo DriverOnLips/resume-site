@@ -5,16 +5,26 @@ section {
   min-height: 50vh;
 }
 
-h1, h2, h3, h4, p, a, li, span {
-  color: var(--text-color-secondary)
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+li,
+span {
+  color: var(--text-color-secondary);
 }
 
 #app {
   --background-color: var(--background-color-dark);
   --background-header-color: var(--background-header-color-dark);
+  --background-item-color: var(--background-item-color-dark);
   --header-shadow-color: var(--header-shadow-color-dark);
 
+  --text-color-first: var(--text-color-first-dark);
   --text-color-secondary: var(--text-color-secondary-dark);
+  --text-color-third: var(--text-color-third-dark);
 
   --header-btn-border: var(--header-btn-border-dark);
   --header-btn-background: var(--header-btn-background-dark);
@@ -22,14 +32,16 @@ h1, h2, h3, h4, p, a, li, span {
 }
 
 .white {
-  --background-color: var(--background-color-white)!important;
-  --background-header-color: var(--background-header-color-white)!important;
+  --background-color: var(--background-color-white) !important;
+  --background-header-color: var(--background-header-color-white) !important;
+  --background-item-color: var(--background-item-color-white) !important;
 
-  --text-color-secondary: var(--text-color-secondary-white)!important;
+  --text-color-first: var(--text-color-first-white) !important;
+  --text-color-secondary: var(--text-color-secondary-white) !important;
+  --text-color-third: var(--text-color-third-white) !important;
 
-  --header-btn-border: var(--header-btn-border-white)!important;
-  --header-btn-background: var(--header-btn-background-white)!important;
-  --header-btn-hover: var(--header-btn-hover-white)!important;
+  --header-btn-border: var(--text-color-secondary-white) !important;
+  --header-btn-background: var(--background-header-color-white) !important;
 }
 
 .text-h1-medium {
@@ -43,12 +55,12 @@ h1, h2, h3, h4, p, a, li, span {
 }
 
 .text-h3-medium {
-  font-size: 32px;
+  font-size: 35px;
   font-weight: 600;
 }
 
 .text-h4-medium {
-  font-size: 27px;
+  font-size: 28px;
   font-weight: 600;
 }
 

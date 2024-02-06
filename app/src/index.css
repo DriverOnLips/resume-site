@@ -1,26 +1,38 @@
 body {
+  font-family: 'Lora', serif;
   margin: 0;
 }
 
 #root {
   /* colors */
   /* dark theme */
-  --background-color-dark: #0D0007;
+  --background-color-dark: #0d0007;
   --background-header-color-dark: #330d32aa;
-  
+
+  --background-item-color-dark: #fafafa;
+
   --header-shadow-color-dark: var(--header-btn-hover-dark);
 
-  --text-color-secondary-dark: #9C9C9C;
+  --text-color-first-dark: #9c9c9c;
+  --text-color-secondary-dark: #9c9c9c;
+  --text-color-third-dark: aqua;
 
   --header-btn-border-dark: #6a096c;
-  --header-btn-background-dark: #330D32;
-  --header-btn-hover-dark: #C422C8;
+  --header-btn-background-dark: #330d32;
+  --header-btn-hover-dark: #c422c8;
 
   /* white theme */
   --background-color-white: #fafafa;
   --background-header-color-white: var(--background-color-white);
 
+  --background-item-color-white: #0d0007;
+
+  --text-color-first-white: #fafafa;
   --text-color-secondary-white: #6a096c;
+  --text-color-third-white: #9c9c9c;
+}
 
-
+@font-face {
+  font-family: 'Lora';
+  src: url('./assets/font/Lora-VariableFont_wght.ttf') format('truetype');
 }
