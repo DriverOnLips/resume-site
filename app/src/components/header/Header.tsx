@@ -16,7 +16,10 @@ const Header: React.FC = () => {
     <header id="header">
       <div className="header__logo">
         <a href="intro" onClick={scrollToSection}>
-          <img className="header__logo-img" src="./src/assets/img/logo.svg" />
+          <img
+            className="header__logo-img"
+            src="./resume-site/src/assets/img/logo.svg"
+          />
         </a>
       </div>
       <div className="header__btns">
