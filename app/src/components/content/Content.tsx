@@ -50,8 +50,8 @@ const Content: React.FC = () => {
         <img
           src={
             theme === 'black'
-              ? './resume/src/assets/img/white-theme.png'
-              : './resume/src/assets/img/black-theme.png'
+              ? './src/assets/img/white-theme.png'
+              : './src/assets/img/black-theme.png'
           }
           onClick={handleThemeChange}
         />
@@ -234,7 +234,7 @@ const Content: React.FC = () => {
         </span>
         <div className="timeline">
           <div className="container left-container">
-            <img src="./resume/src/assets/img/school.png" alt="bmstu" />
+            <img src="./src/assets/img/school.png" alt="bmstu" />
             <div className="text-box">
               <span className="text-h4-medium expirience__company__name">
                 МГТУ им. Баумана
@@ -265,7 +265,7 @@ const Content: React.FC = () => {
           </div>
 
           <div className="container right-container">
-            <img src="./resume/src/assets/img/vk.png" alt="vk" />
+            <img src="./src/assets/img/vk.png" alt="vk" />
             <div className="text-box">
               <span className="text-h4-medium expirience__company__name">
                 VK Образование
@@ -311,7 +311,7 @@ const Content: React.FC = () => {
               rel="noopener noreferrer"
             >
               <img
-                src="./resume/src/assets/img/telegram.png"
+                src="./src/assets/img/telegram.png"
                 className="contact__item-img"
               />
             </a>
@@ -323,7 +323,7 @@ const Content: React.FC = () => {
               rel="noopener noreferrer"
             >
               <img
-                src="./app/src/assets/img/vk2.png"
+                src="./src/assets/img/vk2.png"
                 className="contact__item-img"
               />
             </a>
@@ -335,7 +335,7 @@ const Content: React.FC = () => {
               rel="noopener noreferrer"
             >
               <img
-                src="./resume/src/assets/img/mailru.png"
+                src="./src/assets/img/mailru.png"
                 className="contact__item-img"
               />
             </a>
@@ -347,7 +347,7 @@ const Content: React.FC = () => {
               rel="noopener noreferrer"
             >
               <img
-                src="./resume/src/assets/img/phone.png"
+                src="./src/assets/img/phone.png"
                 className="contact__item-img"
                 alt="Phone Icon"
               />
