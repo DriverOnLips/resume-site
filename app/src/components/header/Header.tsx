@@ -1,17 +1,9 @@
 import React from 'react';
 
 import './Header.css';
+import { scrollToSection } from '../../utils/scrollToSection';
 
 const Header: React.FC = () => {
-	const scrollToSection = (
-		event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-	): void => {
-		event.preventDefault();
-		const id = event.currentTarget.getAttribute('href') || '';
-		const section = document.getElementById(id);
-		section?.scrollIntoView({ behavior: 'smooth' });
-	};
-
 	return (
 		<header id='header'>
 			<div className='header__logo'>
