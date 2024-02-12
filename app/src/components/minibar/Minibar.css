@@ -1,4 +1,4 @@
-#sidebar {
+#minibar {
 	display: flex;
 	flex-direction: column;
 	display: none;
@@ -15,58 +15,78 @@
 	box-shadow: 0px 2px 4px var(--header-shadow-color);
 }
 
-.sidebar__logo {
+.minibar__logo {
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+	width: 93vw;
+	padding-left: 2rem;
+}
+
+.minibar__logo img {
+	position: fixed;
+	right: 0;
+	top: 0;
+	padding: 5px 10px;
 	height: 70px;
 	width: 70px;
 }
 
-.sidebar__close-btn {
+.minibar__close-btn {
 	display: none;
 }
 
-.sidebar-closed {
+.minibar-closed {
 	display: none;
+	height: 70px;
+	width: 70px;
+	padding: 5px 10px;
+	z-index: 3;
 }
 
-.sidebar__logo-img {
+.minibar-closed img {
 	height: 100%;
 	width: 100%;
+}
+
+.minibar__logo-img {
+	left: 20px;
 	cursor: pointer;
 	transition: transform 0.5s ease;
 }
 
-.sidebar__logo-img:hover {
+.minibar__logo-img:hover {
 	transform: scale(1.1);
 }
 
-.sidebar__btns {
+.minibar__btns {
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
 	align-items: center;
 }
 
-.sidebar__btns__components {
+.minibar__btns__components {
 	display: flex;
 	flex-direction: column;
 	padding: 0;
 	gap: 1rem;
 }
 
-.sidebar__btns__components__item {
+.minibar__btns__components__item {
 	cursor: pointer;
 }
 
-.sidebar__btns__components__item-text {
+.minibar__btns__components__item-text {
 	text-decoration: none;
 }
 
-.sidebar__btns__components__item-text {
+.minibar__btns__components__item-text {
 	position: relative;
 	text-decoration: none;
 }
 
-.sidebar__btns__components__item-text::after {
+.minibar__btns__components__item-text::after {
 	content: '';
 	position: absolute;
 	bottom: -2px;
@@ -76,16 +96,16 @@
 	background-color: var(--text-color-secondary);
 }
 
-.sidebar__btns__components__item-text:hover::after {
+.minibar__btns__components__item-text:hover::after {
 	width: 100%;
 	transition: width 0.5s ease;
 }
 
-.sidebar__btns__contact_me-href {
+.minibar__btns__contact_me-href {
 	text-decoration: none;
 }
 
-.sidebar__btns__contact_me {
+.minibar__btns__contact_me {
 	display: flex;
 	height: 46px;
 	margin-bottom: 30px;
@@ -108,14 +128,23 @@
 	border: 2px solid var(--header-btn-hover);
 }
 
-@media (max-width: 1100px) {
-	#sidebar {
+@media (max-width: 800px) {
+	#minibar {
+		display: flex;
+		height: 100%;
+		width: 100%;
+		backdrop-filter: blur(5px);
+		z-index: 999;
+	}
+
+	.minibar__close-btn {
 		display: flex;
 	}
-}
 
-@media (max-width: 800px) {
-	#sidebar {
-		display: none;
+	.minibar-closed {
+		display: flex;
+		position: fixed;
+		right: 0;
+		top: 0;
 	}
 }

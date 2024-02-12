@@ -398,4 +398,8 @@
 	.content {
 		align-items: center;
 	}
+
+	.theme {
+		right: 0;
+	}
 }

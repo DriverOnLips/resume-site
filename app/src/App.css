@@ -58,6 +58,10 @@ span {
 	--header-btn-background: var(--background-header-color-white) !important;
 }
 
+.hide {
+	display: none !important;
+}
+
 .text-h1-medium {
 	font-size: 60px;
 	font-weight: 600;
