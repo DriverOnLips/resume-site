@@ -90,7 +90,7 @@
 }
 
 .about_me__skill_item__point {
-	width: 15px;
+	min-width: 15px;
 	height: 15px;
 	border-radius: 50%;
 	background-color: var(--header-shadow-color);
@@ -415,5 +415,16 @@
 	.left-container img,
 	.right-container img {
 		left: -20px;
+	}
+}
+
+@media (max-width: 500px) {
+	.container {
+		left: 100px;
+		width: calc(100% - 50px);
+	}
+
+	ul {
+		padding-inline-start: 10px;
 	}
 }
