@@ -4,7 +4,7 @@ import './Content.css';
 import { useApp } from '../../hooks/useApp';
 
 const Content: React.FC = () => {
-	const { theme, setTheme } = useApp();
+	const { theme, themeBtnVision, setTheme } = useApp();
 
 	const observer = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
@@ -28,6 +28,11 @@ const Content: React.FC = () => {
 	};
 
 	useEffect(() => {
+		const hiddenElements = document.querySelectorAll('.hidden');
+		hiddenElements.forEach((element) => observer.observe(element));
+	}, []);
+
+	useEffect(() => {
 		const appDiv = document.querySelector('#app');
 		switch (theme) {
 			case 'black':
@@ -39,23 +44,24 @@ const Content: React.FC = () => {
 		}
 	}, [theme]);
 
-	useEffect(() => {
-		const hiddenElements = document.querySelectorAll('.hidden');
-		hiddenElements.forEach((element) => observer.observe(element));
-	}, []);
+	useEffect(() => {}, [themeBtnVision]);
 
 	return (
 		<div className='content'>
-			<div className='theme'>
-				<img
-					src={
-						theme === 'black'
-							? '/resume-site/assets/white-theme.png'
-							: '/resume-site/assets/black-theme.png'
-					}
-					onClick={handleThemeChange}
-				/>
-			</div>
+			{themeBtnVision ? (
+				<div className='theme'>
+					<img
+						src={
+							theme === 'black'
+								? '/resume-site/assets/white-theme.png'
+								: '/resume-site/assets/black-theme.png'
+						}
+						onClick={handleThemeChange}
+					/>
+				</div>
+			) : (
+				<></>
+			)}
 			<section id='intro'>
 				<div className='intro hidden'>
 					<span className='text-h4-medium'>Привет, меня зовут</span>

@@ -1,13 +1,15 @@
 import './Minibar.css';
 import { scrollToSection } from '../../utils/scrollToSection';
 import { useEffect, useState } from 'react';
+import { useApp } from '../../hooks/useApp';
 
 const Minibar = () => {
 	const [minibarMode, setMinibarMode] = useState<'opened' | 'closed'>('closed');
 
+	const { changeThemeBtnVision } = useApp();
+
 	useEffect(() => {
-		const themeElement = document.querySelector('.theme');
-		themeElement?.classList.toggle('hide');
+		changeThemeBtnVision();
 	}, [minibarMode]);
 
 	if (minibarMode === 'closed') {

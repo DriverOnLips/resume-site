@@ -15,7 +15,7 @@ section {
 
 @media (max-width: 800px) {
 	section {
-		width: 90vw;
+		width: 80vw;
 	}
 }
 
@@ -56,10 +56,6 @@ span {
 
 	--header-btn-border: var(--text-color-secondary-white) !important;
 	--header-btn-background: var(--background-header-color-white) !important;
-}
-
-.hide {
-	display: none !important;
 }
 
 .text-h1-medium {

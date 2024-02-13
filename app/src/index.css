@@ -23,7 +23,7 @@ body {
 
 	/* white theme */
 	--background-color-white: #fafafa;
-	--background-header-color-white: var(--background-color-white);
+	--background-header-color-white: #fafafaaa;
 
 	--background-item-color-white: #0d0007;
 

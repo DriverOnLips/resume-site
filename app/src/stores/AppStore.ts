@@ -1,25 +1,27 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface AppState {
-  theme: string;
+	theme: string;
+	themeBtnVision: boolean;
 }
 
 const initialState: AppState = {
-  theme: 'black',
-}
+	theme: 'black',
+	themeBtnVision: true,
+};
 
 export const AppSlice = createSlice({
-  name: 'app',
-  initialState,
-  reducers: {
-    SetTheme: (state, action: PayloadAction<string>) => {
-      state.theme = action.payload;
-    },
-  }
+	name: 'app',
+	initialState,
+	reducers: {
+		SetTheme: (state, action: PayloadAction<string>) => {
+			state.theme = action.payload;
+		},
+		ChangeThemeBtnVision: (state) => {
+			state.themeBtnVision = !state.themeBtnVision;
+		},
+	},
 });
 
 export const appReducer = AppSlice.reducer;
-export const {
-  SetTheme,
-} = AppSlice.actions;
+export const { SetTheme, ChangeThemeBtnVision } = AppSlice.actions;
