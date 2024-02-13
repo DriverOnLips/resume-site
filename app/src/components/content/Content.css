@@ -399,7 +399,21 @@
 		align-items: center;
 	}
 
+	.container {
+		left: 100px;
+		width: calc(100% - 20px);
+	}
+
 	.theme {
 		right: 0;
+	}
+
+	.timeline {
+		left: -120px;
+	}
+
+	.left-container img,
+	.right-container img {
+		left: -20px;
 	}
 }

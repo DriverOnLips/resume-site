@@ -51,6 +51,7 @@
 
 .minibar__logo-img {
 	left: 20px;
+	/* left: calc(50vw - 60px); */
 	cursor: pointer;
 	transition: transform 0.5s ease;
 }

@@ -1,6 +1,6 @@
 import './Minibar.css';
 import { scrollToSection } from '../../utils/scrollToSection';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useApp } from '../../hooks/useApp';
 
 const Minibar = () => {
@@ -8,16 +8,13 @@ const Minibar = () => {
 
 	const { changeThemeBtnVision } = useApp();
 
-	useEffect(() => {
-		changeThemeBtnVision();
-	}, [minibarMode]);
-
 	if (minibarMode === 'closed') {
 		return (
 			<div className='minibar-closed'>
 				<img
 					onClick={() => {
 						setMinibarMode('opened');
+						changeThemeBtnVision();
 					}}
 					src='/resume-site/assets/menu.png'
 				/>
@@ -33,6 +30,7 @@ const Minibar = () => {
 					onClick={(event) => {
 						setMinibarMode('closed');
 						scrollToSection(event);
+						changeThemeBtnVision();
 					}}
 				>
 					<img
@@ -43,6 +41,7 @@ const Minibar = () => {
 				<img
 					onClick={() => {
 						setMinibarMode('closed');
+						changeThemeBtnVision();
 					}}
 					src='/resume-site/assets/cross.png'
 				/>
@@ -55,6 +54,7 @@ const Minibar = () => {
 							onClick={(event) => {
 								setMinibarMode('closed');
 								scrollToSection(event);
+								changeThemeBtnVision();
 							}}
 							className='minibar__btns__components__item-text text-h5-medium'
 						>
@@ -67,6 +67,7 @@ const Minibar = () => {
 							onClick={(event) => {
 								setMinibarMode('closed');
 								scrollToSection(event);
+								changeThemeBtnVision();
 							}}
 							className='minibar__btns__components__item-text text-h5-medium'
 						>
@@ -79,6 +80,7 @@ const Minibar = () => {
 							onClick={(event) => {
 								setMinibarMode('closed');
 								scrollToSection(event);
+								changeThemeBtnVision();
 							}}
 							className='minibar__btns__components__item-text text-h5-medium'
 						>
@@ -91,6 +93,7 @@ const Minibar = () => {
 							onClick={(event) => {
 								setMinibarMode('closed');
 								scrollToSection(event);
+								changeThemeBtnVision();
 							}}
 							className='minibar__btns__components__item-text text-h5-medium'
 						>
