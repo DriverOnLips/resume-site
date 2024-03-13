@@ -75,7 +75,10 @@ const Content: React.FC = () => {
 				</div>
 			</section>
 
-			<section id='about_me' className='about_me hidden'>
+			<section
+				id='about_me'
+				className='about_me hidden'
+			>
 				<span className='about_me__title text-h3-medium'>Обо мне</span>
 				<span className='about_me__text text-h5-medium'>
 					Моя страсть — создание web-приложений, которые не только красивы и
@@ -131,7 +134,10 @@ const Content: React.FC = () => {
 				</ul>
 			</section>
 
-			<section id='tech' className='tech hidden'>
+			<section
+				id='tech'
+				className='tech hidden'
+			>
 				<span className='tech__title text-h3-medium'>Стек технологий</span>
 				<div className='tech__frameworks'>
 					<span className='tech__frameworks__text text-h4-medium'>
@@ -234,13 +240,19 @@ const Content: React.FC = () => {
 				</div>
 			</section>
 
-			<section id='expirience' className='expirience hidden'>
+			<section
+				id='expirience'
+				className='expirience hidden'
+			>
 				<span className='expirience__title text-h3-medium'>
 					Опыт разработки
 				</span>
 				<div className='timeline'>
 					<div className='container left-container'>
-						<img src='/resume-site/assets/school.png' alt='bmstu' />
+						<img
+							src='/resume-site/assets/school.png'
+							alt='bmstu'
+						/>
 						<div className='text-box'>
 							<span className='text-h4-medium expirience__company__name'>
 								МГТУ им. Баумана
@@ -271,7 +283,10 @@ const Content: React.FC = () => {
 					</div>
 
 					<div className='container right-container'>
-						<img src='/resume-site/assets/vk.png' alt='vk' />
+						<img
+							src='/resume-site/assets/vk.png'
+							alt='vk'
+						/>
 						<div className='text-box'>
 							<span className='text-h4-medium expirience__company__name'>
 								VK Образование
@@ -307,7 +322,10 @@ const Content: React.FC = () => {
 				</div>
 			</section>
 
-			<section id='contact' className='contact hidden'>
+			<section
+				id='contact'
+				className='contact hidden'
+			>
 				<span className='contact__title text-h3-medium'>Свяжитесь со мной</span>
 				<div className='contact__items'>
 					<div className='contact__item contact__telegram hidden'>
